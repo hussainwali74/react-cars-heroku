@@ -11,7 +11,7 @@ const Cars = () => {
 
 		axios
 			.get(
-				`https://192.46.223.236/car/cars/?date_gt=${finaldate}&skip=0&limit=10000`
+				`http://192.46.223.236/car/cars/?date_gt=${finaldate}&skip=0&limit=100`
 			)
 			.then((x) => {
 				//   this.cars = x["data"];

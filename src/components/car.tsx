@@ -3,7 +3,6 @@ import React from "react"
 export interface CarType {
 	body_style: string
 	car_name: string
-
 	car_page_link: string
 	city: string
 	drivetrain: string
