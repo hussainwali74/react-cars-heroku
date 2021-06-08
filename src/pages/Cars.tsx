@@ -45,7 +45,7 @@ const Cars = () => {
 						car.entry_date = new Date(car.entry_date).toLocaleString()
 						return car
 					})
-					.filter((car: CarType) => car.price <= 35000)
+					.filter((car: CarType) => car.price > 35000)
 
 				setCars(x["data"])
 				setAllCars(x["data"])
