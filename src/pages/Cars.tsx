@@ -49,9 +49,10 @@ const Cars = () => {
 				setCars(x["data"])
 				setAllCars(x["data"])
 				setLoading(false)
+				// alert("there was an error please contact the admin")
 			})
 			.catch((e) => {
-				setLoading(false)
+				// setLoading(false)
 				alert("there was an error please contact the admin")
 				console.log(e)
 			})
