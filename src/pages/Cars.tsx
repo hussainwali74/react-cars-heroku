@@ -40,12 +40,11 @@ const Cars = () => {
 					return Number(new Date(b["entry_date"])) - Number(new Date(a["entry_date"]))
 				})
 
-				x["data"] = x["data"]
-					.map((car: CarType) => {
-						car.entry_date = new Date(car.entry_date).toLocaleString()
-						return car
-					})
-					.filter((car: CarType) => car.price > 35000)
+				x["data"] = x["data"].map((car: CarType) => {
+					car.entry_date = new Date(car.entry_date).toLocaleString()
+					return car
+				})
+				// .filter((car: CarType) => car.price > 35000)
 
 				setCars(x["data"])
 				setAllCars(x["data"])
